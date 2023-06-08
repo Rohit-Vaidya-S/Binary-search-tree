@@ -6,8 +6,8 @@ int diameter(struct node* root) {
     if (root == NULL) {
         return 0;
     } else {
-        int left_height = CalculateHeight(root->left);
-        int right_height = CalculateHeight(root->right);
+        int left_height = calculateHeight(root->left);
+        int right_height = calculateHeight(root->right);
         int left_diameter = diameter(root->left);
         int right_diameter = diameter(root->right);
       
