@@ -10,7 +10,7 @@ struct node* insert(struct node *root,int value){
     struct node *new = malloc(sizeof(struct node));
     new->data = value;
     if(root == NULL){
-        troot = new;
+        root = new;
         root->left = NULL;
         root->right = NULL;
         return root;
